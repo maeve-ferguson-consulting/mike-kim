@@ -10,11 +10,11 @@ Five steps. About ten minutes.
 
 ## Step 1 — Accept the GitHub invitation
 
-You'll get an email from GitHub: *"Chad Owen invited you to chad-mfc/mike-kim"*
+You'll get an email from GitHub: *"Chad Owen invited you to maeve-ferguson-consulting/mike-kim"*
 
 1. Click **View invitation**
 2. Click **Accept invitation**
-3. You should land on the `mike-kim` repo page at https://github.com/chad-mfc/mike-kim
+3. You should land on the `mike-kim` repo page at https://github.com/maeve-ferguson-consulting/mike-kim
 
 If no email, check spam — or text Chad.
 
@@ -35,7 +35,7 @@ If no email, check spam — or text Chad.
 
 Still in the Sync dialog (reopen via Plugins → + → Sync from GitHub if it closed):
 
-1. Pick `chad-mfc/mike-kim` from the dropdown
+1. Pick `maeve-ferguson-consulting/mike-kim` from the dropdown
 2. Toggle **Sync automatically** to **ON** — this is the key setting. When Chad pushes updates, you get them without lifting a finger.
 3. Set **Default access** to **Installed by default**
 4. Confirm
