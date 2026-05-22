@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "mike-kim",
-      "source": "./",
+      "source": "./plugins/mike-kim",
       "description": "Content strategy and brand voice skills for Mike Kim",
       "author": {
         "name": "Chad Owen"
