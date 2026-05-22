@@ -4,5 +4,12 @@
   "author": {
     "name": "Chad Owen"
   },
-  "skills": "./skills"
+  "skills": [
+    "./skills/define-brand-voice",
+    "./skills/plan-content",
+    "./skills/write-newsletter",
+    "./skills/repurpose-content",
+    "./skills/build-carousel",
+    "./skills/build-story"
+  ]
 }
