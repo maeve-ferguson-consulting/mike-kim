@@ -1,0 +1,26 @@
+{
+  "skill_name": "build-story",
+  "evals": [
+    {
+      "id": 1,
+      "name": "katie-week",
+      "prompt": "Build the stories for the week — Zipline base. Reply keyword rotation per input doc. (Katie's BRAND.md in Project Knowledge; 5 days of story text provided.)",
+      "expected_output": "20 slides planned in Katie's brand. Question-punctuation rule fires on Friday Slide 1. Two CTA versions per day. ONE elaboration suggestion.",
+      "files": ["katie-brand.md", "sample-story-text-katie.md"]
+    },
+    {
+      "id": 2,
+      "name": "missing-brand-precheck",
+      "prompt": "Build the stories for the week. Sample slide text provided. No BRAND.md in Project Knowledge.",
+      "expected_output": "Skill stops, invokes define-brand-voice, preserves slide text.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "question-punctuation",
+      "prompt": "Build Monday's story. Slides 1 and 3 contain questions without trailing '?'. (Katie's BRAND.md in Project Knowledge.)",
+      "expected_output": "Both questions receive '?' append. monday-slide-1.html and monday-slide-3.html show corrected text. No other content changed.",
+      "files": ["katie-brand.md"]
+    }
+  ]
+}
