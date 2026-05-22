@@ -31,14 +31,18 @@ If no email, check spam — or text Chad.
 
 ---
 
-## Step 3 — Sync this plugin
+## Step 3 — Add the plugin marketplace
 
-Still in the Sync dialog (reopen via Plugins → + → Sync from GitHub if it closed):
+In a Claude Code chat, run this command:
 
-1. Pick `maeve-ferguson-consulting/mike-kim` from the dropdown
-2. Toggle **Sync automatically** to **ON** — this is the key setting. When Chad pushes updates, you get them without lifting a finger.
-3. Set **Default access** to **Installed by default**
-4. Confirm
+```
+/plugin marketplace add github:maeve-ferguson-consulting/mike-kim
+```
+
+Claude will fetch the plugin list, then prompt you to install. When asked:
+- Toggle **Sync automatically** to **ON** — updates reach you automatically when Chad pushes new skills
+- Set **Default access** to **Installed by default**
+- Confirm
 
 ---
 
