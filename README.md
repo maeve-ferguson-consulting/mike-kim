@@ -2,88 +2,66 @@
 
 Hi Mike 👋
 
-This repo powers your content skills inside Claude. Once you connect it, every skill update I push reaches you automatically — no downloading or uploading.
+This plugin delivers your content skills inside Claude. Once installed, every new skill Chad pushes reaches you automatically.
 
-Five steps. About ten minutes.
-
----
-
-## Step 1 — Accept the GitHub invitation
-
-You'll get an email from GitHub: *"Chad Owen invited you to maeve-ferguson-consulting/mike-kim"*
-
-1. Click **View invitation**
-2. Click **Accept invitation**
-3. You should land on the `mike-kim` repo page at https://github.com/maeve-ferguson-consulting/mike-kim
-
-If no email, check spam — or text Chad.
+About 10 minutes to set up. Four steps.
 
 ---
 
-## Step 2 — Connect GitHub to Claude (one-time)
+## Step 1 — Install the plugin
 
-1. Open the **Claude desktop app**
-2. Click your profile icon (top-right) → **Customize**
-3. Find the **Plugins** section → click **+** → **Sync from GitHub**
-4. If you haven't connected GitHub before, click **Install GitHub App** — this opens your browser
-5. When GitHub asks "All repositories" or "Only select repositories" → pick **Only select repositories** → choose only `mike-kim`
-6. Click **Install & Authorize**
-
----
-
-## Step 3 — Add the plugin marketplace
-
-In a Claude Code chat, run this command:
+In any Claude Code conversation, run this command:
 
 ```
 /plugin marketplace add github:maeve-ferguson-consulting/mike-kim
 ```
 
-Claude will fetch the plugin list, then prompt you to install. When asked:
-- Toggle **Sync automatically** to **ON** — updates reach you automatically when Chad pushes new skills
-- Set **Default access** to **Installed by default**
-- Confirm
+Claude will find your skill package and ask to install it. When prompted:
+- Click **Install**
+- Keep **Auto-update** on — new skills reach you automatically
 
 ---
 
-## Step 4 — Create a Claude project for your content work
+## Step 2 — Create a project for your content work
 
-1. In Claude, create a new **Project** — call it "Mike Kim Content"
-2. In the Project settings, find **Project Knowledge**
-3. Paste the contents of `docs/BRAND.md` (from this repo) into Project Knowledge — this is the brand intelligence file the skills read from
+1. In Claude, click **Projects** → **New Project**
+2. Name it "Mike Kim Content"
+3. Open **Project Knowledge** → paste the full contents of your BRAND.md file
 
-That's your brand context loaded.
+   *(Chad will send you your BRAND.md file — paste it in full)*
 
----
-
-## Step 5 — Run `define-brand-voice` first
-
-Before using the content skills, run `define-brand-voice` inside your project. It'll refine your brand context into the exact format the other skills expect.
-
-Then you're ready to use:
-- **`plan-content`** — map a month of newsletter content
-- **`write-newsletter`** — draft your weekly newsletter from the plan
-- **`repurpose-content`** — cascade the newsletter across your platforms
+This loads your brand intelligence so every skill knows your voice, positioning, and audience.
 
 ---
 
-## Your skills
+## Step 3 — Run `define-brand-voice` first
 
-| Skill | What it does |
-|-------|-------------|
-| `define-brand-voice` | Sets up and refines your brand voice in Project Knowledge |
-| `plan-content` | Plans a month of content — interview-driven, tethered to your positioning |
-| `write-newsletter` | Drafts your weekly newsletter in your voice from raw material |
-| `repurpose-content` | Turns the newsletter into a full week of social content |
+Inside your new project, type:
+
+```
+define-brand-voice
+```
+
+This refines your brand document into the exact format the content skills expect. Do this once before using the other skills.
 
 ---
 
-## Your brand files
+## Step 4 — You're ready
 
-`docs/BRAND.md` — your brand intelligence document (voice, positioning, audience, story assets)
-`docs/vip-day-transcript.md` — transcript from your Category of One VIP day with Ryan Levesque
+| Skill | What it does | How to trigger |
+|-------|-------------|----------------|
+| `define-brand-voice` | Sets up your brand voice — run this first | Type `define-brand-voice` |
+| `plan-content` | Plans a month of newsletter content | Type `plan content` |
+| `write-newsletter` | Drafts your weekly newsletter from raw material | Type `write the newsletter` |
+| `repurpose-content` | Turns a newsletter into a week of social content | Paste newsletter and say `repurpose this` |
+| `build-carousel` | Builds Instagram/LinkedIn carousel slides as image files | Type `build the carousels` |
+| `build-story` | Builds Instagram/Facebook Story slides as image files | Type `build the stories` |
 
-These are in this repo so they're always accessible. Add `BRAND.md` to your Claude Project Knowledge to activate the skills.
+---
+
+## Getting updates
+
+Skills update automatically. You don't need to do anything.
 
 ---
 
